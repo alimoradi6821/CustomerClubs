@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../static/login/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+          integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <script src="../../static/frontend/js/jquery.js"></script>
+
+</head>
+<body>
+<div class="container left-panel-active" id="login">
+    <div class="form-container username-login-container">
+        <form action="#">
+            <h1>ورود با نام کاربری</h1>
+
+            <div class="social-container">
+                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            </div>
+            <span>ورود با گوگل</span>
+
+
+            <input type="text" placeholder="نام کاربری"/>
+            <input type="password" placeholder="رمز عبور"/>
+            <button>ورود</button>
+        </form>
+    </div>
+    <div class="form-container phone-number-login-container">
+        <form action="#">
+            <h1>ورود با شماره همراه</h1>
+            <input id="phone-number-input" type="text" maxlength="11" placeholder="شماره همراه برای مثال 09121111111"/>
+            <span id="phone-number-invalid">شماره واردشده صحیح نمیباشد</span>
+            <button id="login-pn-button">ورود</button>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-left">
+                <h1>سلام دوست من</h1>
+                <p>برای ورود با شماره همراه روی دکمه زیر کلیک کنید</p>
+                <button class="ghost" id="phone-login">اینوری</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>سلام دوست من</h1>
+                <p>برای ورود با نام کاربری روی دکمه زیر کلیک کنید</p>
+                <button class="ghost" id="username-login">اونوری</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container hidden" id="check-code">
+    <form action="#">
+        <h1>کد ورود را وارد کنید</h1>
+        <div class="row">
+            <input class="number" id="number-1" type="text" maxlength="1"/>
+            <input class="number" id="number-2" type="text" maxlength="1"/>
+            <input class="number" id="number-3" type="text" maxlength="1"/>
+            <input class="number" id="number-4" type="text" maxlength="1"/>
+            <input class="number" id="number-5" type="text" maxlength="1"/>
+            <input class="number" id="number-6" type="text" maxlength="1"/>
+        </div>
+        <button id="confirm-code-button" class="ghost" >تایید</button>
+
+
+    </form>
+</div>
+
+
+<script type="text/javascript" src="../../static/login/js/main.js"></script>
+</body>
+</html>
